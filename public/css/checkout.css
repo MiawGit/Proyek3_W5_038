@@ -1,0 +1,117 @@
+/* Pengaturan dasar halaman */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Kontainer utama */
+body {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Judul halaman */
+h1 {
+    text-align: center;
+    color: #24527a;
+    margin-bottom: 30px;
+}
+
+/* Pesan kesalahan */
+body > p {
+    margin-top: 20px;
+}
+
+form > p {
+    color: #dc3545;
+}
+
+/* Form checkout */
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Label alamat */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Kolom alamat */
+textarea {
+    display: block;
+    width: 100%;
+    min-height: 130px;
+    padding: 12px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+textarea:focus {
+    border-color: #24527a;
+    box-shadow: 0 0 0 3px rgba(36, 82, 122, 0.12);
+}
+
+/* Tombol konfirmasi */
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    background-color: #24527a;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+button[type="submit"]:hover {
+    background-color: #193b59;
+    transform: translateY(-2px);
+}
+
+/* Tautan kembali ke keranjang */
+a {
+    color: #24527a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Tampilan layar kecil */
+@media (max-width: 600px) {
+    body {
+        padding: 25px 15px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}

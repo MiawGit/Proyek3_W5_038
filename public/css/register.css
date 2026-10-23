@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Kotak register */
+.register-container {
+    width: 100%;
+    max-width: 430px;
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    font-size: 26px;
+    margin-bottom: 8px;
+    color: #1e3a5f;
+}
+
+.header p {
+    font-size: 14px;
+    color: #64748b;
+    line-height: 1.5;
+}
+
+/* Input form */
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+    border-color: #1e3a5f;
+}
+
+/* Pesan error */
+.error-message {
+    background: #fee2e2;
+    color: #b91c1c;
+    padding: 12px;
+    margin-bottom: 18px;
+    border-radius: 7px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Pesan berhasil */
+.success-message {
+    background: #dcfce7;
+    color: #166534;
+    padding: 12px;
+    margin-bottom: 18px;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+/* Tombol daftar */
+.register-button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 7px;
+    background: #1e3a5f;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.register-button:hover {
+    background: #294d78;
+}
+
+/* Link login */
+.login-link {
+    margin-top: 22px;
+    text-align: center;
+    font-size: 14px;
+    color: #64748b;
+}
+
+.login-link a {
+    color: #1e3a5f;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Link kembali */
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #64748b;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    color: #1e3a5f;
+}
+
+/* Tampilan HP */
+@media (max-width: 480px) {
+    .register-container {
+        padding: 25px 20px;
+    }
+}
