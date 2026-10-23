@@ -1,0 +1,178 @@
+
+/* ==============================
+   HALAMAN KERANJANG BELANJA
+============================== */
+
+body:has(> h1:first-child) {
+    margin: 0;
+    padding: 40px 20px;
+    background-color: #f3f6fa;
+    color: #263445;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+body:has(> h1:first-child) > h1 {
+    max-width: 1000px;
+    margin: 0 auto 25px;
+    color: #183b56;
+    font-size: 30px;
+}
+
+/* Pesan sukses dan error */
+
+body:has(> h1:first-child) > p {
+    max-width: 1000px;
+    box-sizing: border-box;
+    margin: 10px auto;
+    padding: 12px 16px;
+    background-color: #ffffff;
+    border: 1px solid #dce4ed;
+    border-radius: 8px;
+}
+
+/* Kotak setiap produk */
+
+body:has(> h1:first-child) > div {
+    max-width: 1000px;
+    box-sizing: border-box;
+    margin: 0 auto 18px;
+    padding: 22px !important;
+    background-color: #ffffff;
+    border: 1px solid #e0e7ef !important;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(24, 59, 86, 0.06);
+    transition: box-shadow 0.2s ease;
+}
+
+body:has(> h1:first-child) > div:hover {
+    box-shadow: 0 7px 20px rgba(24, 59, 86, 0.1);
+}
+
+/* Nama produk */
+
+body:has(> h1:first-child) h3 {
+    margin: 0 0 12px;
+    color: #183b56;
+    font-size: 20px;
+}
+
+/* Informasi harga, stok, subtotal */
+
+body:has(> h1:first-child) div p {
+    margin: 7px 0;
+    color: #526273;
+}
+
+/* Form jumlah dan hapus */
+
+body:has(> h1:first-child) form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+body:has(> h1:first-child) label {
+    font-weight: 600;
+    color: #34495e;
+}
+
+body:has(> h1:first-child) input[type="number"] {
+    width: 85px;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 15px;
+    outline: none;
+}
+
+body:has(> h1:first-child) input[type="number"]:focus {
+    border-color: #2878a5;
+    box-shadow: 0 0 0 3px rgba(40, 120, 165, 0.12);
+}
+
+/* Tombol */
+
+body:has(> h1:first-child) button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 7px;
+    background-color: #24527a;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+body:has(> h1:first-child) button:hover {
+    background-color: #183b56;
+}
+
+/* Tombol hapus */
+
+body:has(> h1:first-child) form:has(input[type="hidden"][name="_method"][value="DELETE"]) button {
+    background-color: #dc3545;
+}
+
+body:has(> h1:first-child) form:has(input[type="hidden"][name="_method"][value="DELETE"]) button:hover {
+    background-color: #b02a37;
+}
+
+/* Total harga */
+
+body:has(> h1:first-child) > h2 {
+    max-width: 1000px;
+    box-sizing: border-box;
+    margin: 25px auto;
+    padding: 20px;
+    background-color: #e7f0f8;
+    border-radius: 10px;
+    color: #183b56;
+    font-size: 23px;
+}
+
+/* Tautan */
+
+body:has(> h1:first-child) > a {
+    display: inline-block;
+    margin: 8px max(calc((100% - 1000px) / 2), 0px);
+    padding: 11px 18px;
+    border-radius: 7px;
+    background-color: #24527a;
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+body:has(> h1:first-child) > a:hover {
+    background-color: #183b56;
+}
+
+/* Responsif untuk HP */
+
+@media (max-width: 600px) {
+    body:has(> h1:first-child) {
+        padding: 25px 14px;
+    }
+
+    body:has(> h1:first-child) > h1 {
+        font-size: 25px;
+    }
+
+    body:has(> h1:first-child) > div {
+        padding: 16px !important;
+    }
+
+    body:has(> h1:first-child) form {
+        align-items: flex-start;
+    }
+
+    body:has(> h1:first-child) > h2 {
+        font-size: 20px;
+    }
+}

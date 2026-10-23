@@ -1,0 +1,150 @@
+/* Pengaturan dasar halaman */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    margin: 0;
+    padding: 30px 20px 50px;
+    line-height: 1.6;
+}
+
+/* Judul halaman */
+h1 {
+    text-align: center;
+    color: #24527a;
+    margin-bottom: 30px;
+}
+
+/* Pesan sukses */
+.alert {
+    max-width: 750px;
+    margin: 0 auto 20px;
+    background-color: #d4edda;
+    color: #155724;
+    padding: 12px 16px;
+    border-radius: 8px;
+}
+
+/* Kartu pesanan */
+.order-card {
+    max-width: 750px;
+    margin: 0 auto 24px;
+    background-color: #ffffff;
+    border: 1px solid #e0e5eb;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(36, 82, 122, 0.08);
+}
+
+/* Header kartu: nomor pesanan */
+.order-header {
+    margin: 0;
+    padding: 14px 20px;
+    color: #24527a;
+    background-color: #f8fafc;
+    border-left: 5px solid #24527a;
+}
+
+/* Baris informasi tanggal & alamat */
+.order-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 14px;
+    padding: 10px 20px;
+    border-bottom: 1px solid #eef1f5;
+}
+
+.tanggal {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 14px;
+}
+
+.alamat {
+    font-size: 15px;
+    color: #444;
+}
+
+/* Detail barang */
+.detail-title {
+    margin: 0;
+    padding: 14px 20px 4px;
+    color: #24527a;
+}
+
+.items {
+    margin: 0;
+    padding: 4px 20px 12px;
+    list-style: none;
+}
+
+.item {
+    padding: 6px 0;
+    border-bottom: 1px dashed #eef1f5;
+}
+
+.item:last-child {
+    border-bottom: none;
+}
+
+/* Total harga */
+.total {
+    display: block;
+    padding: 14px 20px;
+    color: #24527a;
+    font-size: 18px;
+    background-color: #f8fafc;
+    border-top: 2px solid #e0e5eb;
+}
+
+/* Pesan saat belum ada pesanan */
+.empty {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+    color: #666;
+}
+
+/* Link kembali ke katalog */
+.back {
+    max-width: 750px;
+    margin: 30px auto 0;
+    text-align: center;
+}
+
+.back a {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #24527a;
+    padding: 10px 26px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back a:hover {
+    background-color: #1c3f5e;
+}
+
+/* Tampilan layar kecil */
+@media (max-width: 600px) {
+    body {
+        padding: 20px 12px 40px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .order-header,
+    .order-meta,
+    .detail-title,
+    .items,
+    .total {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+}
